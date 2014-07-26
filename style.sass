@@ -56,36 +56,91 @@ body
   color: #fff
   min-width: 320px
 header
-  background: url('img/fondo.jpg') no-repeat center center fixed
-  background-size: cover
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
   padding-top: 170px
+  div#instafeed
+    position: absolute
+    top: 0
+    left: -50px
+    width: 120%
+    div.likes
+      z-index: 10
+      top: 30px
+      right: 30px
+      color: #FFF
+      position: fixed
+      span
+        font-size: .8em
+        text-transform: uppercase
+        background-color: rgba(255,255,255,.3)
+        padding: .3em .6em
+        color: #fff
+    img
+      position: relative
+      width: 100%
+      border-radius: 0
+      z-index: -100
+      -webkit-filter: blur(10px)
+      -moz-filter: blur(10px)
+      -o-filter: blur(10px)
+      -ms-filter: blur(10px)
+      filter: blur(10px)
+      background-size: cover
+      -webkit-background-size: cover
+      -moz-background-size: cover
+      -o-background-size: cover
+      @media (max-width: 650px)
+        height: 100%
+        width: auto
+
   div.division
     height: 2px
     background: #fff
+    position: relative
+    z-index: 999
+    @media (max-width: 650px)
+      margin-top: -50px
+
   img
     margin-top: -75px
     width: 150px
     border-radius: 75px
+    position: relative
+    z-index: 999
+    @media (max-width: 650px)
+      margin-top: -50px
+      width: 100px
   h1
     font-family: 'Montserrat', sans-serif
     font-size: 2.5em
     margin: .5em 0
     font-weight: bold
+    position: relative
+    z-index: 999
   h2
     font-size: 1.2em
     font-weight: 100
     margin-bottom: 1em
+    position: relative
+    z-index: 999
   p 
     width: 70%
     margin: 0 auto
     font-weight: 100
     padding: 2em
     background: rgba(0,0,0,0.3)
+    position: relative
+    z-index: 999
+    text-align: left
+    @media (max-width: 650px)
+      width: 95%
+      padding: 1em 1em 6em
   nav
+    position: relative
+    z-index: 999
     ul 
+      @media (max-width: 650px)
+        margin-top: -70px
+        padding-bottom: 18px
       li
         display: inline
         margin: 1em 0
@@ -102,6 +157,9 @@ header
             &:hover
               border: solid 2px #00e09f
               background: #00e09f
+            @media (max-width: 650px)
+              margin: 0 .5em  
+              width: 40px
         a.link_twitter
           img
             &:hover
@@ -134,6 +192,8 @@ header
               background: rgb(255,172,0)
 
 section#portafolio
+  position: relative
+  z-index: 999
   h3
     padding: 2em
     font-weight: 600
@@ -143,6 +203,8 @@ section#portafolio
     letter-spacing: .5px
   article
     padding: 14em 2em
+    @media (max-width: 650px)
+      padding: 6em 2em
     h4
       font-family: 'Montserrat', sans-serif
       font-size: 3em
@@ -166,10 +228,22 @@ section#portafolio
       transition: all .5s ease
     a:hover
       border: solid 2px #00e09f
-      background: #00e09f
+      background: #00e09f    
 
   article.bandtastic
-    background: url('https://s3.amazonaws.com/bandtastic_heroku/fotos_eventos/vconcert-2013-blur.jpg') no-repeat center center
+    background: url('img/vconcert-2013-blur.jpg') no-repeat center center
+    background-size: cover
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+  article.crowdint
+    background: url('img/crowdint.jpg') no-repeat center center
+    background-size: cover
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+  article.insta-arte
+    background: url('img/insta-arte.jpg') no-repeat center center
     background-size: cover
     -webkit-background-size: cover
     -moz-background-size: cover
@@ -189,7 +263,6 @@ section#portafolio
     background: -ms-linear-gradient(top, #53c4cc 0%, #43aac9 40%, #3192c7 100%)
     background: linear-gradient(to bottom, #53c4cc 0%, #43aac9 40%, #3192c7 100%)
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#53c4cc', endColorstr='#3192c7',GradientType=0 )
-
   article.una-playera
     background: url('img/una-playera.jpg') no-repeat center center
     background-size: cover
@@ -201,14 +274,13 @@ section#portafolio
     background: #444444
     padding: 5em 0 0 0
     div.contenedor-wp
-      background: url('img/beles-bg.jpg') no-repeat center center
       background-size: cover
       -webkit-background-size: cover
       -moz-background-size: cover
       -o-background-size: cover
       div.sitio-wordpress
         min-width: 320px
-        margin: 0
+        margin: 3px 0
         width: 33%
         vertical-align: top
         display: inline-block
@@ -217,20 +289,27 @@ section#portafolio
           font-family: 'Montserrat', sans-serif
           font-size: 1.5em
           margin-bottom: 1.5em
+        @media (max-width: 650px)
+          width: 100%
+          padding: 4em 0
+      div.quality-shot, div.synapsis, div.synapsis
+        background-size: cover
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
       div.quality-shot
-        background: url('img/quality-shot-bg.jpg') no-repeat center center
-        background-size: cover
-        -webkit-background-size: cover
-        -moz-background-size: cover
-        -o-background-size: cover
-      
+        background-color: #fc6e18
       div.synapsis
-        background: url('img/synapsis-bg.jpg') no-repeat center center
-        background-size: cover
-        -webkit-background-size: cover
-        -moz-background-size: cover
-        -o-background-size: cover
-  
+        background-color: #DA4FA7
+      div.petsy
+        background-color: #7BB000
+      div.bar-el-mismo
+        background-color: #D6192E
+      div.nodogeek
+        background-color: #3299BB
+      div.beles
+        background-color: #aa9e49
+
   article.apps
     background: url('img/apps.jpg') no-repeat center center
     background-size: cover
@@ -238,10 +317,13 @@ section#portafolio
     -moz-background-size: cover
     -o-background-size: cover
     padding: 5em 0 0 0
+    margin-top: -2px
     img.iphone
       width: 25%
       margin-top: -2em
       margin-bottom: -.5em
+      @media (max-width: 650px)
+        width: 32%
                 
 
 
