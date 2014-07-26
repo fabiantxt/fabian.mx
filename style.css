@@ -67,9 +67,9 @@ header {
 }
 header div#instafeed {
   position: absolute;
-  top: 0;
-  left: -50px;
-  width: 120%;
+  top: 50px;
+  left: 0;
+  width: 100%;
 }
 header div#instafeed div.likes {
   z-index: 10;
@@ -103,7 +103,7 @@ header div#instafeed img {
 @media (max-width: 650px) {
   header div#instafeed img {
     height: 100%;
-    width: auto;
+    width: 100%;
   }
 }
 header div.division {
@@ -151,14 +151,12 @@ header p {
   font-weight: 100;
   padding: 2em;
   background: rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 999;
   text-align: left;
 }
 @media (max-width: 650px) {
   header p {
-    width: 95%;
-    padding: 1em 1em 13em;
+    width: 83.6%;
+    padding: 3em 2em 13em;
     font-size: 0.9em;
     line-height: 1.4em;
     background: rgba(0, 0, 0, 0.6);
