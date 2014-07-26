@@ -190,6 +190,9 @@ header nav ul li a img {
   -o-border-radius: 60px;
   border: solid 2px white;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 header nav ul li a img:hover {
   border: solid 2px #00e09f;
