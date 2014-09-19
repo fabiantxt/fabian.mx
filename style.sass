@@ -59,11 +59,15 @@ header
   padding-top: 170px
   div#instafeed
     position: absolute
-    top: 50px
+    top: 0
     left: 0
     width: 100%
+    overflow: hidden
+    @media (max-width: 650px)
+      overflow: visible
+
     div.likes
-      z-index: 10
+      z-index: 20
       top: 30px
       right: 30px
       color: #FFF
@@ -75,6 +79,7 @@ header
         padding: .3em .6em
         color: #fff
     img
+      transform: scale(1.05)
       position: relative
       width: 100%
       border-radius: 0
@@ -84,13 +89,12 @@ header
       -o-filter: blur(10px)
       -ms-filter: blur(10px)
       filter: blur(10px)
-      background-size: cover
-      -webkit-background-size: cover
-      -moz-background-size: cover
-      -o-background-size: cover
+      margin-top: -250px
       @media (max-width: 650px)
         height: 100%
         width: 100%
+        margin-top: -15px
+        transform: scale(3)
 
   div.division
     height: 2px
