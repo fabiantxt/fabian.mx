@@ -101,7 +101,6 @@ header div#instafeed img {
   -moz-filter: blur(10px);
   -o-filter: blur(10px);
   -ms-filter: blur(10px);
-  filter: blur(10px);
   margin-top: -250px;
 }
 @media (max-width: 650px) {
@@ -329,7 +328,6 @@ section#portafolio article.nubity {
   background: -o-linear-gradient(top, #53c4cc 0%, #43aac9 40%, #3192c7 100%);
   background: -ms-linear-gradient(top, #53c4cc 0%, #43aac9 40%, #3192c7 100%);
   background: linear-gradient(to bottom, #53c4cc 0%, #43aac9 40%, #3192c7 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#53c4cc', endColorstr='#3192c7',GradientType=0 );
 }
 section#portafolio article.una-playera {
   background: url("img/una-playera.jpg") no-repeat center center;
